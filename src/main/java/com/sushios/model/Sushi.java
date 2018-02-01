@@ -9,19 +9,49 @@ public class Sushi {
     @Id
     public String id;
 
-    public String name;
-    public Double price;
-    public String category;
+    public String getName() {
+        return name;
+    }
 
-    public Sushi(String name, Double price, String category) {
+    public void setName(String name) {
         this.name = name;
+    }
+
+    public Double getPrice() {
+        return price;
+    }
+
+    public void setPrice(Double price) {
         this.price = price;
+    }
+
+    public String getCategory() {
+        return category;
+    }
+
+    public void setCategory(String category) {
         this.category = category;
     }
 
-    @Override
-    public String toString(){
-        return "Sushi{"+"name = '" + name + '\'' + " price= "+ price + ", category= " + category + '}';
+    public Integer getStock() {
+        return stock;
+    }
+
+    public void setStock(Integer stock) {
+        this.stock = stock;
+    }
+
+    private String name;
+    private Double price;
+    private String category;
+    private Integer stock;
+
+
+    public Sushi(String name, Double price, String category, Integer stock) {
+        this.name = name;
+        this.price = price;
+        this.category = category;
+        this.stock = stock;
     }
 
 }

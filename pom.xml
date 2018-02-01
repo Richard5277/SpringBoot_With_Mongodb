@@ -50,6 +50,21 @@
 		</dependency>
 	</dependencies>
 
+	<filter>
+		<filter-name>httpPutFormFilter</filter-name>
+		<filter-class>org.springframework.web.filter.HttpPutFormContentFilter</filter-class>
+	</filter>
+
+	<filter-mapping>
+		<filter-name>httpPutFormFilter</filter-name>
+		<servlet-name>dispatcherServlet</servlet-name>
+	</filter-mapping>
+
+	<servlet>
+		<servlet-name>dispatcherServlet</servlet-name>
+		<servlet-class>org.springframework.web.servlet.DispatcherServlet</servlet-class>
+	</servlet>
+
 	<build>
 		<plugins>
 			<plugin>

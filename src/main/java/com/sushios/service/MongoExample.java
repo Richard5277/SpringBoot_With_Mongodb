@@ -17,9 +17,9 @@ public class MongoExample implements CommandLineRunner {
 
 //        repository.deleteAll();
 //
-//        repository.save( new Sushi("Spring Roll",2.50, "Roll" ));
+//        repository.save( new Sushi("Spring Roll",2.50, "Roll", 300));
 //
-//        repository.save( new Sushi("Miso Soup",3.50, "Soup" ));
+//        repository.save( new Sushi("Miso Soup",3.50, "Soup", 200));
 
     }
 

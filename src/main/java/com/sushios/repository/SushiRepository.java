@@ -8,6 +8,8 @@ import java.util.List;
 
 public interface SushiRepository extends MongoRepository<Sushi, String> {
 
-    public List<Sushi> findByName(String name);
+    Sushi findByName(String name);
+
+//    void updateSushi(Sushi sushi);
 
 }
